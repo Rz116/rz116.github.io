@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body
+{
+		background-color: rgb(128, 128, 255);
+		font-family: Comic sans ms;
+		color: Black;
+		
+}
+h1
+{
+		color: Black;
+		font-family: Comic sans ms;
+		text-align: left;
+}
+button 
+{
+		display: inline-block;
+		width: 105px;
+}
+label
+{
+		font-size: 20px;
+}
+input
+{
+		width: 200px;
+		display: inline-block;
+		font-size: 20px;
+		margin: 5px;
+}
+label[id = "pmessage"]
+{
+		font-size: 20px;
+		font-family: Comic sans ms;
+}

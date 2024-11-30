@@ -1,11 +1,24 @@
-body
+h1
 {
-	background-color: teal;
-	font-family: Courier New;
-	font-size: 20px;
+    text-align: center;
+}
+#Question1,#Question2,#Question3
+{
+    margin-right: 40%; 
+    margin-left: 40%;
+}
+#Answers
+{
+    margin-right: 43%; 
+    margin-left: 43%;
+}
+body 
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
 }
 button,input
 {
-	font-family: Courier New; 
-	font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:18px;
 }

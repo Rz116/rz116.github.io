@@ -81,15 +81,16 @@ function Answers()
         li.innerText = ListAnswers[i]; 
         element.appendChild(li);
     }
-    
+
     let removeitem = "Correct"; 
     let wrong = ListAnswers.filter(value => value !=removeitem); 
     let length2 = wrong.length; 
     let difference = length - length2; 
     let percent = difference/length;
     let other = percent * 100;
-
-    document.getElementById("percentage").textContent = other + "%";
+    let rounded = Math.round(other)
+    
+    document.getElementById("percentage").textContent =  rounded + "%";
     document.getElementById("Question3").style.display = "none"; 
     document.getElementById("Answers").style.display = "block";
 }

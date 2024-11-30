@@ -1,5 +1,6 @@
 window.addEventListener("load",Getthings); 
 let ListAnswers = [];
+var count = 0;
 function Getthings()
 {
     document.getElementById("Answers").style.display = "none";
@@ -80,6 +81,15 @@ function Answers()
         li.innerText = ListAnswers[i]; 
         element.appendChild(li);
     }
+    
+    let removeitem = "Correct"; 
+    let wrong = ListAnswers.filter(value => value !=removeitem); 
+    let length2 = wrong.length; 
+    let difference = length - length2; 
+    let percent = difference/length;
+    let other = percent * 100;
+
+    document.getElementById("percentage").textContent = other + "%";
     document.getElementById("Question3").style.display = "none"; 
     document.getElementById("Answers").style.display = "block";
 }

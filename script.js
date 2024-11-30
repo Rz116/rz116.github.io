@@ -49,8 +49,7 @@ function Check()
     }
     else
     {
-        sum = parseInt(Value1) + parseInt(value2);
-        if(sum == 5 )
+        if(Value1 == 2 && value2 == 3 || Value1 == 3 && value2 == 2)
         {
             ListAnswers.push("Correct");
         }

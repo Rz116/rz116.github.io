@@ -6,6 +6,7 @@ function Getthings()
     document.getElementById("Answers").style.display = "none";
     document.getElementById("Question2").style.display = "none"; 
     document.getElementById("Question3").style.display = "none"; 
+    document.getElementById("Question4").style.display = "none";
     document.getElementById("BlueWhale").addEventListener("click",Correct);
     document.getElementById("Lion").addEventListener("click",Wrong);
     document.getElementById("African").addEventListener("click",Wrong);
@@ -15,6 +16,7 @@ function Getthings()
     document.getElementById("Xijingping").addEventListener("click",Correct2);
     document.getElementById("DengXiaoPing").addEventListener("click",Wrong2);
     document.getElementById("SolutionInput").addEventListener("click",Check);
+    document.getElementById("Input").addEventListener("click",check2);
 
 
 }
@@ -63,12 +65,40 @@ function Check()
 function Correct2()
 {
     ListAnswers.push("Correct");
-    Answers()
+    document.getElementById("Question3").style.display = "none"; 
+    document.getElementById("Question4").style.display = "block";
+    document.getElementById("solution").focus();
 }
 function Wrong2()
 {
     ListAnswers.push("Incorrect");
-    Answers()
+    document.getElementById("Question3").style.display = "none"; 
+    document.getElementById("Question4").style.display = "block";
+    document.getElementById("solution").focus();
+}
+function check2()
+{
+    var value = document.getElementById("solution").value; 
+    var checking = !isNaN(value); 
+    if(value == "" || checking == false)
+    {
+        alert("Type in a valid input(HAS TO BE A NUMBER)")
+        document.getElementById("solution").value = ""; 
+        document.getElementById("solution").focus();
+    }
+    else 
+    {
+        if(value == 4 || value == 2)
+        {
+            ListAnswers.push("Correct");
+            Answers()
+        }
+        else
+        {
+            ListAnswers.push("Incorrect"); 
+            Answers()
+        }
+    }
 }
 function Answers()
 {
@@ -91,6 +121,6 @@ function Answers()
     let rounded = Math.round(other)
     
     document.getElementById("percentage").textContent =  rounded + "%";
-    document.getElementById("Question3").style.display = "none"; 
+    document.getElementById("Question4").style.display = "none"; 
     document.getElementById("Answers").style.display = "block";
 }

@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Insert title here</title>
-		<link href = "customize.css" rel = "stylesheet"></link>
-		<script src = "script.js"></script>
-	</head>
-	<body>
-		<div id = "Inputs">
-			<h1>Inputs</h1>
-			<label id = "lblHowmany">How many Things are you doing today:</label>
-			<input id = "txtHowmany" type = "text" autofocus></input>
-			<button id = "btn1" type = "button">SUBMIT</button><br><br>
-			
-			<label id = "lblThings">What are you doing: </label>
-			<input id = "txtThings" type = "Text"></input>
-			<button id = "btn2" type = "button">SUBMIT</button>
-		</div>
-		
-		<div id = "Output">
-			<h1><b>To do List</b></h1>
-			<ul id = "TodoList"></ul>
-		</div>
-		
-	</body>
+    <head> 
+        <title>Quiz Game</title>
+        <script src = "script.js"></script>
+        <link rel = "stylesheet" href = "customize.css"></head>
+    </head>
+
+    <body>
+        
+        <div id = "Question1">
+            <h1>QUIZ ON MANY THINGS</h1>
+            <label>1.What is the largest Animal in the world? </label><br><br>
+            <button type = "button" id = "BlueWhale">Blue Whale</button><br><br>
+            <button type = "button" id = "Lion">African Lion</button><br><br>
+            <button type = "button" id = "African">African Man</button><br><br>
+            <button type = "button" id = "American">Fat American</button><br><br>
+        </div>
+        <div id = "Question2">
+            <h1>QUIZ ON MANY THINGS</h1>
+            <label>2.What are the solutions to x^2 - 5x + 6 = 0?</label><br>
+            <input id = "Solution1"></input>
+            <input id = "Solution2"></input><br>
+            <button type = "button" id = "SolutionInput">SUBMIT</button>
+        </div>
+        <div id = "Question3">
+            <h1>QUIZ ON MANY THINGS</h1>
+            <label>3.Who is the President of China?</label><br><br>
+            <button type = "button" id = "Trump">Trump</button><br><br>
+            <button type = "button" id = "Mao">Mao Ze Dong</button><br><br>
+            <button type = "button" id = "Xijingping">Xi Jing Ping</button><br><br>
+            <button type = "button" id = "DengXiaoPing">NIGGEr</button><br><br>
+        </div>
+
+        <div id = "Answers">
+            <h1>Answers</h1>
+            <ol id = "answer">
+                <li>Blue Whale</li>
+                <li>2 and 3</li>
+                <li>Xi Jing Ping</li>
+            </ol>
+            <ol id = "Correct/Wrong"></ol>
+        </div>
+    </body>
+
+
 </html>

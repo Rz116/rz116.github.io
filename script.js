@@ -7,6 +7,7 @@ function Getthings()
     document.getElementById("Question2").style.display = "none"; 
     document.getElementById("Question3").style.display = "none"; 
     document.getElementById("Question4").style.display = "none";
+    document.getElementById("Question5").style.display = "none";
     document.getElementById("BlueWhale").addEventListener("click",Correct);
     document.getElementById("Lion").addEventListener("click",Wrong);
     document.getElementById("African").addEventListener("click",Wrong);
@@ -17,8 +18,10 @@ function Getthings()
     document.getElementById("DengXiaoPing").addEventListener("click",Wrong2);
     document.getElementById("SolutionInput").addEventListener("click",Check);
     document.getElementById("Input").addEventListener("click",check2);
-
-
+    document.getElementById("Answer1").addEventListener("click",Correct3);
+    document.getElementById("Answer2").addEventListener("click",Wrong3);
+    document.getElementById("Answer3").addEventListener("click",Wrong3);
+    document.getElementById("Answer4").addEventListener("click",Wrong3);
 }
 function Correct()
 {
@@ -90,14 +93,24 @@ function check2()
         if(value == 4 || value == 2)
         {
             ListAnswers.push("Correct");
-            Answers()
         }
         else
         {
             ListAnswers.push("Incorrect"); 
-            Answers()
         }
+        document.getElementById("Question4").style.display = "none";
+        document.getElementById("Question5").style.display = "block";
     }
+}
+function Correct3()
+{
+    ListAnswers.push("Correct");
+    Answers()
+}
+function Wrong3()
+{
+    ListAnswers.push("Incorrect"); 
+    Answers()
 }
 function Answers()
 {
@@ -117,9 +130,9 @@ function Answers()
     let difference = length - length2; 
     let percent = difference/length;
     let other = percent * 100;
-    let rounded = Math.round(other)
+    let rounded = Math.round(other);
     
     document.getElementById("percentage").textContent =  rounded + "%";
-    document.getElementById("Question4").style.display = "none"; 
+    document.getElementById("Question5").style.display = "none"; 
     document.getElementById("Answers").style.display = "block";
 }

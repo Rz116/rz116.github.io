@@ -1,32 +1,82 @@
+
 h1
-{
-    text-align: center;
+{  
+    text-align: center; 
+    margin:auto;
+    margin-bottom: 5%;
+    font-size: 65px;
 }
-#Question1,#Question2,#Question3,#Question4,#Question5
+#Heading
 {
-    max-width: fit-content;
-    margin-right: auto; 
-    margin-left: auto;
+    width: 100%;
+    margin-left: auto; 
+    margin-right: auto;
+    border:0.00001px solid black;
+    background-color:blanchedalmond;
 }
-#Answers
-{
-    max-width: fit-content;
-    margin-right: auto; 
-    margin-left: auto;
+img 
+{   
+    position:absolute;
+    display: block;
 }
-body 
+#benefit2,#consequence2
 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
+    margin-left: 8%;
+    border-radius: 15px;
 }
-input
+#benefit1,#consequence1
 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size:18px;
+	margin-left: 6%;
+	border-radius: 15px;
+}
+#benefit1:hover,#consequence1:hover,#benefit2:hover,#consequence2:hover
+{
+	box-shadow: 0 12px 16px 0 grey, 0 17px 50px 0 grey; 
+	transition-duration: 0.3s,0.3s;
+}
+
+#benefit1,#consequence1,#benefit2,#consequence2
+{
+    height: 250px; 
+    width: 23%;
+}
+#benefit1,#benefit2,#consequence1,#consequence2
+{
+    margin-bottom: 35px;
+}
+#BM
+{
+    margin-top: 1%;
+	height: 70px; 
+	width: 100px;
+    float:right;
+    margin-right: 0.3%;
+    border-radius: 50%;
+}
+#BM:hover
+{
+	box-shadow: 0 10px 16px 0 grey, 0 17px 51px 0 grey;
+	transition-duration: 0.3s;
+}
+body
+{
+    margin:0;
+    padding:0;
+    display: inline-block;
+    font-family:Segoe UI;
 }
 button
 {
-    
-    font-family: 'Courier New', Courier, monospace;
-    font-size:18px;
+    font-family:Segoe UI;
+    background-color:antiquewhite;
+}
+#paragraph
+{
+    margin-left:6%;
+    width:45%; 
+}
+h3
+{
+    margin-left:6%;
+    font-size: 24px;
 }

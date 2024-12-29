@@ -47,8 +47,8 @@ img
     margin-left:auto; 
     margin-right:auto;
     margin-top:5%;
-    height: 300px; 
-    width: 25%;
+    height: 285px; 
+    width: 30%;
     border-radius: 15px;
     font-size:18px;
     margin-bottom:10%;
@@ -57,14 +57,14 @@ img
 #Weight_Tracker:hover
 {
     box-shadow: 0 10px 16px 0 grey, 0 17px 51px 0 grey;
-    width:30%; 
-    height:350px;
+    width:35%; 
+    height:320px;
     background-color:rgb(80,150,230);
     font-size:20px;
 }
 #BM
 {
-    margin-top: -34%;
+    margin-top: -32%;
 	height: 70px; 
 	width: 100px;
     float:right;
@@ -77,6 +77,7 @@ img
 	box-shadow: 0 10px 16px 0 grey, 0 17px 51px 0 grey;
     width:120px; 
     height:80px;
+    font-size:16px;
     background-color:rgb(80,150,230);
 }
 body

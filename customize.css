@@ -1,75 +1,70 @@
-h1
-{  
-    text-align: center; 
-    margin-bottom: 3%;
-    font-size: 65px;
-    display:block;
-}
 #Heading
 {
     width: 100%;
+    height:600px;
     margin-left: auto; 
     margin-right: auto;
     border:0.00001px solid black;
-    background-color:rgb(137,207,240);
+    background-image: url(pexels-ashiq-ali-11436188-18470153.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
 }
 img 
 {   
     position:absolute;
 }
-#benefit2,#consequence2
+#benefit2,#consequence2,#benefit1
 {
-    margin-left: 8%;
+    margin-left: 3%;
     border-radius: 15px;
     transition-duration: 0.3s;
+    margin-bottom:5%;
 }
-#benefit1,#consequence1
+#consequence1
 {
-	margin-left: 6%;
-	border-radius: 15px;
+    margin-left:5%;
+    border-radius: 15px;
     transition-duration: 0.3s;
+    margin-bottom:5%;
 }
 #benefit1:hover,#consequence1:hover,#benefit2:hover,#consequence2:hover
 {
 	box-shadow: 0 12px 16px 0 grey, 0 17px 50px 0 grey; 
-    width:25%; 
-    height:280px;
+    width:23%; 
+    height:260px;
     background-color:rgb(80,150,230);
     font-size:15px;
 
 }
-
 #benefit1,#consequence1,#benefit2,#consequence2
 {
-    height: 250px; 
-    width: 23%;
-}
-#benefit1,#benefit2,#consequence1,#consequence2
-{
-    margin-bottom: 35px;
+    height: 230px; 
+    width: 20%;
 }
 #Weight_Tracker
 {
-    float:right;
-    height: 250px; 
-    width: 23%;
-    margin-top:-10%;
-    margin-right:5%;
+    display:block; 
+    margin-left:auto; 
+    margin-right:auto;
+    margin-top:5%;
+    height: 300px; 
+    width: 25%;
     border-radius: 15px;
     font-size:18px;
+    margin-bottom:10%;
     transition-duration:0.4s;
 }
 #Weight_Tracker:hover
 {
     box-shadow: 0 10px 16px 0 grey, 0 17px 51px 0 grey;
-    width:25%; 
-    height:280px;
+    width:30%; 
+    height:350px;
     background-color:rgb(80,150,230);
     font-size:20px;
 }
 #BM
 {
-    margin-top: -9%;
+    margin-top: -34%;
 	height: 70px; 
 	width: 100px;
     float:right;
@@ -99,14 +94,23 @@ button
 #paragraph
 {
 	background-color:rgb(137,207,240);
-    margin-left:6%;
-    width:45%; 
+    margin-left:auto;
+    margin-right:auto;
+    width:70%; 
     border: 2px solid black;
-	padding: 3%;
+	padding: 2%;
 	border-radius: 25px;
+}
+p
+{
+    text-align: center;
 }
 h3
 {
-    margin-left:6%;
     font-size: 24px;
+    text-align:center;
+}
+h2
+{
+    text-align: center;
 }

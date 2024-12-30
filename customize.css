@@ -9,6 +9,14 @@
     background-size:100%;
     background-repeat: no-repeat;
 }
+h1 
+{
+    margin-top:5%;
+    text-align:center; 
+    display:block; 
+    font-size: 30px;
+    margin-bottom:5%;
+}
 img 
 {   
     position:absolute;
@@ -46,25 +54,25 @@ img
     display:block; 
     margin-left:auto; 
     margin-right:auto;
-    margin-top:5%;
-    height: 285px; 
-    width: 30%;
+    margin-top:-3%;
+    height: 50px; 
+    width: 10%;
     border-radius: 15px;
     font-size:18px;
     margin-bottom:10%;
     transition-duration:0.4s;
+    background:transparent;
 }
 #Weight_Tracker:hover
 {
     box-shadow: 0 10px 16px 0 grey, 0 17px 51px 0 grey;
-    width:35%; 
-    height:320px;
-    background-color:rgb(80,150,230);
+    width:12%; 
+    height:60px;
     font-size:20px;
 }
 #BM
 {
-    margin-top: -31%;
+    margin-top: -24.5%;
 	height: 70px; 
 	width: 100px;
     float:right;

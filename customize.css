@@ -83,10 +83,7 @@ img
 #BM:hover
 {
 	box-shadow: 0 10px 16px 0 grey, 0 17px 51px 0 grey;
-    width:120px; 
-    height:80px;
-    font-size:16px;
-    background-color:rgb(80,150,230);
+    text-decoration: underline;
 }
 body
 {

@@ -9,7 +9,7 @@ function button()
     document.getElementById("question_5").style.display = "none";
     document.getElementById("question_6").style.display = "none";
     document.getElementById("Home").addEventListener("click",Home_Page);
-	document.getElementById("direct").addEventListener("click",Output);
+    document.getElementById("direct").addEventListener("click",Output);
     document.getElementById("Submit_1").addEventListener("click",Question_1); 
     document.getElementById("submit_2").addEventListener("click",Question_2); 
     document.getElementById("submit_3").addEventListener("click",Question_3); 

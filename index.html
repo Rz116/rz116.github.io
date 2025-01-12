@@ -1,46 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head> 
         <title>GainZ</title>
-        <script src = "home.js"></script>
-        <link href = "customize.css" rel = "stylesheet"></link>
         <link href = "GA-Photoroom (1).png" rel = "icon" type = "image/x-icon"></link>
+        <link href = "tracker.css" rel = "stylesheet"></link>
+        <script src = "tracker.js"></script>
     </head>
-    <body>
-        <img src = "GA-Photoroom (1).png" width="12%" height="auto"></img>
 
-        <div id = "Heading">
-            <h1>This is a a guide<br> to help you <br>lose weight</h1>
-            <button type = "button" id = "Weight_Tracker"><b>Click</b></button>
-            <button type = "button" id = "BM"><b>HOME</b></button>
+    <body>
+        <img src = "GA-Photoroom (1).png" height = "auto" width = "10%"></img>
+        <div id = "banner">
+            <h1 id = "title">GainZ</h1>
+            <button type = "button" id = "Home"><b>HOME</b></button>
         </div>
         <br><br>
-
-        <div id = "paragraph">
-            <u><h2>Background</h2></u>
-            <p>This is a website that will help you with your health. This website will specifically help you with 
-                your weight.<br>This website will help you with losing weight, becoming healthier and also looking 
-                better. Below there are <br>some consequences to being overweight and benefits to losing weight, if 
-                you want to learn some reasons as <br>to why you should be losing weight if you are overweight or obese.
-            </p>
-        </div><br><br>
-        
-
-        <u><h3>Consequences and Benefits</h3></u>
-        <div id = "buttons">
-            <button type = "button" id = "consequence1">There are consequences to being overweight, it can increase your chance of 
-                getting heart disease and increased risk of stroke. (Click on the button to see more information!)
-            </button>
-            <button type = "button" id = "consequence2">More consequences include: an increased risk for type 2 diabetes,
-                high blood pressure, high cholesterol and breathing problems. (Click on the button to see more information!)
-            </button>
-
-            <button type = "button" id = "benefit1">Losing Weight has benefits such as lowering your risk of heart disease, 
-                lowering your blood pressure and can increase your quality if sleep. (Click on the button to see more information!)
-            </button>
-            <button type = "button" id = "benefit2">Losing Weight also has other benefits such as lowering your risk for having a stroke, 
-                improve your self esteem and helps with joint pain. (Click on the button to see more information!)        
-            </button>
+        <div id ="question_1">
+            <label id = "question1">What is your current weight in pounds?</label><br>
+            <input type = "text" id = "answer_1" autofocus></input><br>
+            <button type = "button" id = "Submit_1"><b>SUBMIT</b></button><br><br>
+            <label id = "existing_user">If you have already done this Click on the button below to go back 
+           	 to the output page</label><br><br> 
+           	 <button id = "direct" type = "submit"><b>Click</b></button>
+        </div>  
+        <div id = "question_2">
+            <label id = "question2">What is the weight that you would like to get down to?</label><br>
+            <input type = "text" id = "answer_2" ></input><br>
+            <button type = "button" id = "submit_2"><b>SUBMIT</b></button>
+        </div>
+        <div id = "question_3">
+            <label id = "question3">What is your age currently?</label><br>
+            <input type = "text" id = "answer_3" ></input><br>
+            <button type = "button" id = "submit_3"><b>SUBMIT</b></button>
+        </div>
+        <div id = "question_4">
+            <label id = "question2">What is your height in inches?</label><br>
+            <input type = "text" id = "answer_4" ></input><br>
+            <button type = "button" id = "submit_4"><b>SUBMIT</b></button>
+        </div>
+        <div id = "question_5">
+            <label id = "question2">What is your activity level?</label><br>
+            <select id  = "answer_5">
+                <option>Sedentary</option>
+                <option>Lightly Active</option>
+                <option>Moderately active</option>
+                <option>Very active</option>
+                <option>Extra active</option>
+            </select><br>
+            <button type = "button" id = "submit_5"><b>SUBMIT</b></button>
+        </div>
+        <div id = "question_6">
+            <label id = "question2">Please select your gender</label><br>
+            <select id = "answer_6">
+                <option id = "Woman">Woman</option>
+                <option id = "Man">Man</option>
+            </select><br>
+            <button type = "button" id = "submit_6"><b>SUBMIT</b></button>
         </div>
     </body>
 </html>
